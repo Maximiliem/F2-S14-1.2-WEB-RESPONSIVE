@@ -1,0 +1,46 @@
+/* Estilo del menú de navegación */
+.topnav {
+    overflow: hidden;
+    background-color: #171717;
+    position: relative;
+    padding: 15.2px;
+}
+
+/* Ocultar los links dentro del menú de navegación */
+.topnav #items #opciones-desplegadas{
+    display: none;
+}
+
+/* Estilo de los links del menú de navegación */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Estilo del menú hamburguesa */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Agregar color gris al background cuando se pase el mouse por arriba */
+.topnav a:hover {
+    background-color: #008cff;
+    color: black;
+  }
+
+  /* Estilo del título */
+  .title {
+    background-color: #008cff;
+    color: white;
+  }
+
+  /* .container-options{
+    background-color: #4b4a4a;
+  } */
