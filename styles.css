@@ -47,20 +47,16 @@ body {
     padding: 1vh;
 } */
 
+/*ACÁ EMPIEZA EL CÓDIGO QUE TENGO QUE USAR PARA LO DE BOOTSTRAP*/
 .container-options {
     background-color: #4b4a4a;
 }
 
-.row{
+.row {
     margin: 20px;
 }
 
-.content-items .paragraph{    
+.content-items .paragraph {
     text-align: justify;
     background-color: #f1f1f1;
 }
-
-.content-items .empty-col{
-    background-color: white;
-}
-
