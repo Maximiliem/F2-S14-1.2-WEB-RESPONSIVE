@@ -1,13 +1,18 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* Estilo del menú de navegación */
 .topnav {
     overflow: hidden;
     background-color: #171717;
     position: relative;
     padding: 15.2px;
+    color: white;
 }
 
 /* Ocultar los links dentro del menú de navegación */
-.topnav #items #opciones-desplegadas{
+.topnav #items #opciones-desplegadas {
     display: none;
 }
 
@@ -33,14 +38,29 @@
 .topnav a:hover {
     background-color: #008cff;
     color: black;
-  }
+}
 
-  /* Estilo del título */
-  .title {
+/* Estilo del título */
+/* .title {
     background-color: #008cff;
     color: white;
-  }
+    padding: 1vh;
+} */
 
-  /* .container-options{
+.container-options {
     background-color: #4b4a4a;
-  } */
+}
+
+.row{
+    margin: 20px;
+}
+
+.content-items .paragraph{    
+    text-align: justify;
+    background-color: #f1f1f1;
+}
+
+.content-items .empty-col{
+    background-color: white;
+}
+
