@@ -1,8 +1,8 @@
 // INICIO DE DECLARACIÓN DE CONSTANTES
 const containerOptions = document.getElementById('visibleOptionsContainer');
-const optionsContent = 
+const optionsContent =
     `
-    <div class="col-lg-3" id="optionsItems">
+    <div class="col-lg-3">
         <div class="col-lg-3 opciones">
             <ul>
                 <div class="row option-list">
@@ -21,31 +21,31 @@ const optionsContent =
         </div>
     </div>`;
 
-const showOptionsElements = document.createElement('div');
-const showOptionsOnBtn = document.getElementById('btnDesplegarOpciones');
+const divContainerForCollapse =
+    `
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body" id="cardContainer">
+        ${optionsContent}
+        </div>
+    </div>`;
+
+
+const divOptions = document.getElementById('divOptionsId');
+const cardContainer = document.getElementById('cardContainer');
 // FIN DE DECLARACIÓN DE CONSTANTES
 
+
+
+
 // INICIO DE FUNCIONES
-function putOptionContent(){
+function putOptionContent() {
     containerOptions.innerHTML = optionsContent;
 }
 putOptionContent();
 
-function putOptionContentOnbtn(){
-    showOptionsOnBtn.appendChild(showOptionsElements);
-    showOptionsElements.classList.add("card", "card-body"); // Agregar clases al elemento showOptionsElements
-    showOptionsElements.setAttribute("id", "btnDivId");
+function putCardContainerContent(){
+    divOptions.insertAdjacentHTML('beforeend', divContainerForCollapse);
+    
 }
-putOptionContentOnbtn();
-
-document.getElementById('optionsLink').addEventListener('click', function() {
-    const optionsCollapse = document.getElementById('optionsItems');
-    const isCollapsed = optionsCollapse.classList.contains('show');
-    if (isCollapsed) {
-        optionsCollapse.classList.remove('show');
-    } else {
-        optionsCollapse.classList.add('show');
-    }
-});
-
+putCardContainerContent();
 // FIN DE FUNCIONES
